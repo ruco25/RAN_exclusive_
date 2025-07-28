@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAN Exclusive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+    </video>
+    <div class="logo">RAN EXCLUSIVE</div>
+    <div class="bienvenida">¡Bienvenidos a la tienda oficial!</div>
+    <div class="menu">
+      <button onclick="mostrarSeccion('novedades')">NOVEDADES</button>
+      <button onclick="mostrarSeccion('exclusive')">EXCLUSIVE</button>
+      <button onclick="mostrarSeccion('drop')">ESTRENOS DROP</button>
+    </div>
+  </header>
+
+  <section id="novedades" class="seccion"></section>
+  <section id="exclusive" class="seccion"></section>
+  <section id="drop" class="seccion"></section>
+
+  <button class="cart-btn" onclick="mostrarCarrito()">🛒</button>
+  <div id="cart" class="cart-box">
+    <h3>Tu Carrito</h3>
+    <div id="cartItems"></div>
+    <button class="add-btn" onclick="finalizarCompra()">Enviar por WhatsApp</button>
+  </div>
+
+  <footer>
+    Instagram: @ran_exclusive <br>
+    Email: contacto@ranexclusive.com <br>
+    WhatsApp: +598 091290479
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
